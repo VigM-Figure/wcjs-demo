@@ -1,6 +1,7 @@
 # WalletConnect-JS Demo App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 This project is using [WalletConnect-JS](https://github.com/provenance-io/walletconnect-js) to establish connections with wallets.
 
 Want a tutorial for this demo? View Medium article written here [Creating dApps via WalletConnect-JS](https://medium.com/@vmikulis/creating-dapps-via-walletconnect-js-658268c8d549)
