@@ -9,7 +9,6 @@ body {
 
 section {
   max-width: 100%;
-  word-break: break-all;
   padding: 25px 100px;
   background-color: #282c34;
 }
@@ -17,4 +16,5 @@ section {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  word-break: break-all;
 }
