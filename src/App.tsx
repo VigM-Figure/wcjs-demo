@@ -1,8 +1,10 @@
 import { useWalletConnect, QRCodeModal } from "@provenanceio/walletconnect-js";
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import { DisconnectTest } from "./DisconnectTest";
 
 function App() {
+  const [loadDisconnectTest, setLoadDisconnectTest] = useState(false);
   const { walletConnectService, walletConnectState } = useWalletConnect();
   const {
     connected,
@@ -18,6 +20,13 @@ function App() {
       <header className="App-header">
         {connected ? (
           <div>
+            {loadDisconnectTest ? (
+              <DisconnectTest />
+            ) : (
+              <button onClick={() => setLoadDisconnectTest(true)}>
+                Render Disconnect Test
+              </button>
+            )}
             <p>
               You've Connected with "<code>{name}</code>" wallet!
             </p>
